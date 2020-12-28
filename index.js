@@ -48,9 +48,9 @@ const responseBody = `
   <meta charset="UTF-8">
   <title>Under Maintenance | KweeksNews Network</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/KweeksNews/dev@master/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/KweeksNews/dev@master/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/KweeksNews/dev@master/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/KweeksNews/network@master/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/KweeksNews/network@master/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/KweeksNews/network@master/favicon-16x16.png">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand&display=swap'>
   <style>
     * {
@@ -184,7 +184,7 @@ const responseBody = `
 
 <body>
   <header>
-    <img src="https://cdn.jsdelivr.net/gh/KweeksNews/dev@master/assets/images/kweeksnet.svg" alt="KweeksNet" title="KweeksNet" width="220">
+    <img src="https://cdn.jsdelivr.net/gh/KweeksNews/network@master/assets/images/kweeksnet.svg" alt="KweeksNet" title="KweeksNet" width="220">
   </header>
   <main>
     <div class="container">
@@ -193,8 +193,8 @@ const responseBody = `
     </div>
   </main>
   <footer>
-    <a href="https://status.kweeksnews.com/" target="_blank" rel="noopener">Status</a> | <a
-      href="https://dev.kweeksnews.com/" target="_blank" rel="noopener">Dev</a>
+    <a href="https://network.kweeksnews.com/" target="_blank" rel="noopener">Network</a> | <a
+      href="https://status.kweeksnews.com/" target="_blank" rel="noopener">Status</a>
     <p>
       &copy;
       <script>document.write(new Date().getFullYear())</script> <span class="marking">KweeksNews Network</span>. All
