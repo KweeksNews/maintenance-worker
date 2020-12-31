@@ -1,40 +1,40 @@
 addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
-})
+  event.respondWith(handleRequest(event.request));
+});
 
 async function handleRequest(request) {
-  const allowedIp = JSON.parse(await KV.get('allowed-ip'))
-  const allowedHostname = JSON.parse(await KV.get('allowed-hostname'))
-  const url = new URL(request.url)
-  const response = await fetch(request)
+  const allowedIp = JSON.parse(await KV.get('allowed-ip'));
+  const allowedHostname = JSON.parse(await KV.get('allowed-hostname'));
+  const url = new URL(request.url);
+  const response = await fetch(request);
   const responseHeaders = new Headers({
     'Content-Type': 'text/html',
     'Cache-Control': 'no-cache',
-  })
+  });
 
   if (allowedHostname.includes(url.hostname)) {
-    return response
+    return response;
   } else {
     if (allowedIp.includes(request.headers.get('cf-connecting-ip'))) {
       if (!response.ok) {
         return new Response(responseBody, {
           status: response.status,
           headers: responseHeaders,
-        })
+        });
       } else {
-        return response
+        return response;
       }
     } else {
       if (!response.ok) {
         return new Response(responseBody, {
           status: 503,
           headers: responseHeaders,
-        })
+        });
       } else {
         return new Response(responseBody, {
           status: 200,
           headers: responseHeaders,
-        })
+        });
       }
     }
   }
@@ -204,4 +204,4 @@ const responseBody = `
 </body>
 
 </html>
-`
+`;

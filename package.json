@@ -1,10 +1,9 @@
 {
   "name": "maintenance",
   "version": "1.0.0",
-  "description": "A workers to handle maintenance situation",
+  "description": "Maintenance Page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"**/*.{js,css,json,md}\""
   },
   "author": "KweeksDev <admin@kweeksnews.com>",
