@@ -12,30 +12,28 @@ async function handleRequest(request) {
     'Cache-Control': 'no-cache',
   });
 
-  if (allowedHostname.includes(url.hostname)) {
+  if (allowedIp.includes(request.headers.get('cf-connecting-ip'))) {
     return response;
-  } else {
-    if (allowedIp.includes(request.headers.get('cf-connecting-ip'))) {
-      if (!response.ok) {
-        return new Response(responseBody, {
-          status: response.status,
-          headers: responseHeaders,
-        });
-      } else {
-        return response;
-      }
+  } else if (allowedHostname.includes(url.hostname)) {
+    if (!response.ok) {
+      return new Response(responseBody, {
+        status: 503,
+        headers: responseHeaders,
+      });
     } else {
-      if (!response.ok) {
-        return new Response(responseBody, {
-          status: 503,
-          headers: responseHeaders,
-        });
-      } else {
-        return new Response(responseBody, {
-          status: 307,
-          headers: responseHeaders,
-        });
-      }
+      return response;
+    }
+  } else {
+    if (!response.ok) {
+      return new Response(responseBody, {
+        status: 503,
+        headers: responseHeaders,
+      });
+    } else {
+      return new Response(responseBody, {
+        status: 307,
+        headers: responseHeaders,
+      });
     }
   }
 }
