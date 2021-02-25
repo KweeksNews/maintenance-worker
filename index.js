@@ -32,7 +32,7 @@ async function handleRequest(request) {
         });
       } else {
         return new Response(responseBody, {
-          status: 200,
+          status: 307,
           headers: responseHeaders,
         });
       }
@@ -197,8 +197,10 @@ const responseBody = `
       href="https://status.kweeksnews.com/" target="_blank" rel="noopener">Status</a>
     <p>
       &copy;
-      <script>document.write(new Date().getFullYear())</script> <span class="marking">KweeksNews Network</span>. All
-      Rights Reserved.
+      <span id="copyright">
+      <script>document.getElementById('copyright').innerHTML = new Date().getFullYear();</script>
+      </span>
+      <span class="marking">KweeksNews Network</span>. All Rights Reserved.
     </p>
   </footer>
 </body>
