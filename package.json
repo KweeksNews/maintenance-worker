@@ -1,15 +1,39 @@
 {
   "name": "maintenance",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Maintenance Page",
-  "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"**/*.{js,css,json,md}\""
+    "start:dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint --fix ./src"
   },
   "author": "KweeksDev <admin@kweeksnews.com>",
   "license": "GPL-3.0-or-later",
   "private": true,
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "html-webpack-plugin": "^5.3.2",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^9.0.0",
+    "style-loader": "^3.2.1",
+    "svgo": "^2.3.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "jquery": "^3.6.0",
+    "lazysizes": "^5.3.2",
+    "regenerator-runtime": "^0.13.7"
   }
 }

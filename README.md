@@ -1,8 +1,8 @@
-# <p align="center"><img width="40%" src="https://network.kweeksnews.com/assets/images/kweeksnet.svg"></p>
+# <p align="center"><img width="40%" src="https://network.kweeksnews.com/assets/img/kweeksnews-network.svg"></p>
 
 ## Introduction
 
-A [Cloudflare Workers](https://workers.cloudflare.com/) service to handle maintenance situations on KweeksNews Network sites.
+A [Cloudflare Workers](https://workers.cloudflare.com/) service to handle maintenance situations on KweeksNews Network services.
 
 ### License
 
