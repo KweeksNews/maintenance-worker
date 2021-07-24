@@ -7,7 +7,6 @@ const { extendDefaultPlugins } = require('svgo');
 module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
   output: {
-    path: path.resolve(__dirname, 'public'),
     filename: 'assets/js/[name].bundle.js',
     publicPath: '/',
     clean: true,
@@ -39,7 +38,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'src/public/'),
-          to: path.resolve(__dirname, 'public/'),
+          to: path.resolve(__dirname, 'dist/'),
         },
       ],
     }),

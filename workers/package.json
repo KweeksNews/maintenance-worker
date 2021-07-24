@@ -3,7 +3,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "lint": "eslint --fix ./index.js"
+    "lint": "eslint --fix ./src"
   },
   "license": "GPL-3.0-or-later",
   "private": true,

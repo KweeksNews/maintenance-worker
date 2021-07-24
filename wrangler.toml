@@ -15,5 +15,5 @@ cwd = "./workers"
 format = "service-worker"
 
 [site]
-bucket = "./public"
+bucket = "./dist"
 entry-point = "./workers"
