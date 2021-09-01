@@ -5,7 +5,7 @@
   "scripts": {
     "start:dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint --fix ./src"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "author": "KweeksDev <admin@kweeksnews.com>",
   "license": "GPL-3.0-or-later",
@@ -24,7 +24,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
     "style-loader": "^3.2.1",
-    "svgo": "^2.3.1",
+    "svgo": "^2.5.0",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
