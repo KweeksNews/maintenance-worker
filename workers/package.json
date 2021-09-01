@@ -3,15 +3,16 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "lint": "eslint --fix ./src"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "license": "GPL-3.0-or-later",
   "private": true,
   "devDependencies": {
+    "eslint": "^7.32.0",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "@cloudflare/kv-asset-handler": "~0.1.2"
+    "@cloudflare/kv-asset-handler": "^0.1.3"
   }
 }
