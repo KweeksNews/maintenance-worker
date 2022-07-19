@@ -5,7 +5,7 @@ workers_dev = false
 compatibility_date = "2022-07-19"
 
 [[kv_namespaces]]
-binding = "KV"
+binding = "CONFIG"
 id = "20667e84f04843c883d31d8d48f2500a"
 
 [build]
