@@ -6,10 +6,11 @@ compatibility_date = "2022-07-19"
 
 [[kv_namespaces]]
 binding = "CONFIG"
-id = "20667e84f04843c883d31d8d48f2500a"
+id = "e210960e515040dbac47a542b5efd90f"
+preview_id = "348375916100463baca31f7dc6680b6f"
 
 [build]
-command = "npm ci && npm run build && cd workers && npm ci && npm run build"
+command = "npm run build && cd workers && npm run build"
 
 [site]
 bucket = "./dist"
