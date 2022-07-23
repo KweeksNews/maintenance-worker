@@ -1,7 +1,9 @@
 {
-  "name": "maintenance",
-  "version": "4.0.0",
+  "name": "@kweeksnews-network/maintenance",
   "description": "Maintenance Page",
+  "version": "4.0.0",
+  "author": "KweeksDev <admin@kweeksnews.com>",
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "lint": "next lint",
     "format": "next lint --fix",
@@ -9,9 +11,6 @@
     "build": "next build && next export  -o dist/ && rimraf dist/404.html",
     "start": "next start"
   },
-  "author": "KweeksDev <admin@kweeksnews.com>",
-  "license": "GPL-3.0-or-later",
-  "private": true,
   "dependencies": {
     "next": "12.2.2",
     "react": "18.2.0",
