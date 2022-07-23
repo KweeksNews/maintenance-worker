@@ -1,6 +1,5 @@
 import { Config } from '../config';
-import { Layout } from '../components/core';
-import { Content } from '../components/home';
+import { Content, Layout } from '../components/core';
 
 export default function Home() {
   return (
