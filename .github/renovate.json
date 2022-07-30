@@ -17,7 +17,10 @@
       "schedule:weekends"
     ],
     "automerge": true,
-    "automergeStrategy": "fast-forward"
+    "automergeStrategy": "fast-forward",
+    "labels": [
+      "dependencies"
+    ]
   },
   "packageRules": [
     {
@@ -55,6 +58,7 @@
         "github-actions"
       ],
       "labels": [
+        "dependencies",
         "github actions"
       ]
     }
