@@ -10,8 +10,8 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "3.14.1",
-    "@typescript-eslint/parser": "5.30.7",
-    "eslint": "8.20.0",
+    "@typescript-eslint/parser": "5.33.0",
+    "eslint": "8.21.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.2.1",
