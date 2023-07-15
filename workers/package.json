@@ -9,8 +9,8 @@
     "@cloudflare/kv-asset-handler": "0.3.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20230628.0",
-    "@typescript-eslint/parser": "5.61.0",
+    "@cloudflare/workers-types": "4.20230710.0",
+    "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.44.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
