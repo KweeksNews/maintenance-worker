@@ -19,7 +19,7 @@
     "rimraf": "4.4.1"
   },
   "devDependencies": {
-    "@types/node": "18.19.13",
+    "@types/node": "18.19.14",
     "@types/react": "18.2.51",
     "@types/react-dom": "18.2.18",
     "autoprefixer": "10.4.17",
