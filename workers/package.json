@@ -6,10 +6,10 @@
     "build": "tsc --build"
   },
   "dependencies": {
-    "@cloudflare/kv-asset-handler": "0.3.2"
+    "@cloudflare/kv-asset-handler": "0.3.3"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240605.0",
+    "@cloudflare/workers-types": "4.20240614.0",
     "@typescript-eslint/parser": "5.62.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "8.10.0",
